@@ -79,4 +79,19 @@ public class CustomUser implements UserDetails {
         this.enabled = enabled;
     }
 
+    @Override
+    public String toString() {
+        return "CustomUser{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", authorities=" + authorities +
+                ", accountNonExpired=" + accountNonExpired +
+                ", accountNonLocked=" + accountNonLocked +
+                ", credentialsNonExpired=" + credentialsNonExpired +
+                ", enabled=" + enabled +
+                '}';
+    }
 }

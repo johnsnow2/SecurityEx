@@ -34,7 +34,10 @@ public class HomeController {
         }
 
         String name = user.getUsername();
+        String roleid = user.getFirstName();
         model.addAttribute("username", name);
+        model.addAttribute("roleid", roleid);
+
         model.addAttribute("message", "Welcome to the secured page");
         return "home";
 
