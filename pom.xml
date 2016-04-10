@@ -13,10 +13,12 @@
         <spring-security.version>3.2.7.RELEASE</spring-security.version>
         <slf4j-version>1.7.12</slf4j-version>
         <hibernate-version>5.0.1.Final</hibernate-version>
+        <!-- Spring Data -->
+        <spring-framework.data.version>1.9.1.RELEASE</spring-framework.data.version>
     </properties>
     <dependencies>
 
-        <!--driver for connection to MYSql database -->
+         <!--driver for connection to MYSql database -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

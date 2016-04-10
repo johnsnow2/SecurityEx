@@ -19,7 +19,7 @@
 
             <!-- /.row -->
 
-            <c:url value="/file.html" var="file"/>
+
             <c:url value="/email.html" var="email"/>
 
             <!-- Portfolio Section -->

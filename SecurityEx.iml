@@ -19,6 +19,7 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring-mvc.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/application-context.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -94,6 +95,5 @@
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.12" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:slf4j-log4j12:1.7.12" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.0.1.Final" level="project" />
   </component>
 </module>
