@@ -17,8 +17,20 @@
         <spring-framework.data.version>1.9.1.RELEASE</spring-framework.data.version>
     </properties>
     <dependencies>
+        <!--Spring Data-->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>${spring-framework.data.version}</version>
+        </dependency>
+        <!--Hibernate validator (contains @NotEmpty)-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.2.4.Final</version>
+        </dependency>
 
-         <!--driver for connection to MYSql database -->
+        <!--driver for connection to MYSql database -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

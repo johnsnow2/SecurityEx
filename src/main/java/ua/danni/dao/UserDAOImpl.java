@@ -7,7 +7,7 @@ import java.util.List;
 import org.hibernate.*;
 import org.springframework.stereotype.Repository;
 
-import ua.danni.hibernate.utils.HibernateSessionFactory;
+//import ua.danni.hibernate.utils.HibernateSessionFactory;
 import ua.danni.model.CustomUser;
 import ua.danni.model.Role;
 import ua.danni.Role_enum;
@@ -65,28 +65,28 @@ public class UserDAOImpl {
 
         UserEntity user = new UserEntity();
         int idUser;
-        Session session = HibernateSessionFactory.getSessionFactory().openSession();
+       // Session session = HibernateSessionFactory.getSessionFactory().openSession();
 
-        Transaction tx = session.beginTransaction();
-
-
-
-     SQLQuery query = session.createSQLQuery("SELECT idUser FROM user where login='"+login+"';");
-
-     List<Integer> rows = query.list();
+        //Transaction tx = session.beginTransaction();
 
 
-     idUser = rows.get(0);
 
-        user =  session.get(UserEntity.class, idUser);
+   //  SQLQuery query = session.createSQLQuery("SELECT idUser FROM user where login='"+login+"';");
+
+    // List<Integer> rows = query.list();
+
+
+   //  idUser = rows.get(0);
+
+      //  user =  session.get(UserEntity.class, idUser);
 
             Hibernate.initialize(user);
 
-        if (session != null && session.isOpen()) {
-            tx.commit();
-            session.close();
+        //if (session != null && session.isOpen()) {
+        //    tx.commit();
+        //    session.close();
 
-        }
+      //  }
         return user;
     }
 
